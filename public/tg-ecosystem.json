@@ -1,0 +1,82 @@
+{
+ "id": "tg",
+ "nameLong": "",
+ "img": "https://hoiiodotcom.files.wordpress.com/2014/06/tradegecko-logo-colour-1.png",
+ "size": 60,
+ "children": [
+   {
+     "id": "Xero",
+     "cluster": 1,
+     "nameLong": "Xero",
+     "link": "https://www.tradegecko.com/integrations/xero-inventory-management",
+     "img":  "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Xero_software_logo.svg/1024px-Xero_software_logo.svg.png"
+   },
+   {
+     "id": "QBO",
+     "cluster": 1,
+     "nameLong": "Quickbooks",
+     "link": "https://www.tradegecko.com/integrations/quickbooks-inventory-management",
+     "img":  "https://quickbooks.intuit.com/content/dam/intuit/quickbooks/common/qb_thumb.png"
+   },
+   {
+     "id": "Shopify",
+     "cluster": 2,
+     "nameLong": "Shopify",
+     "link": "https://www.tradegecko.com/integrations/shopify-inventory-management",
+     "img":  "https://static1.squarespace.com/static/553f4667e4b0abb691b9fd09/58764e2ebf629a8deadfb7c9/58764e5420099e0e12688a2a/1484148342515/channel-icons-color-09.png"
+   },
+   {
+     "id": "Amazon",
+     "cluster": 2,
+     "nameLong": "Amazon",
+     "link": "https://www.tradegecko.com/integrations/amazon-inventory-management",
+     "img":  "https://yokoent.com/images/amazon-logo-png-circle.png"
+   },
+   {
+     "id": "Magento",
+     "cluster": 2,
+     "nameLong": "Magento",
+     "link": "https://www.tradegecko.com/integrations/magento-inventory-management",
+     "img":  "https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/magento-512.png"
+   },
+   {
+     "id": "Woo",
+     "cluster": 2,
+     "nameLong": "WooCommerce",
+     "link": "https://www.tradegecko.com/integrations/woocommerce-inventory-management",
+     "img":  "https://www.onesaas.com/wp-content/uploads/2017/07/App-logo-WooCommerce.png"
+   },
+   {
+     "id": "Physical",
+     "cluster": 2,
+     "nameLong": "Physical",
+     "link": ""
+   },
+   {
+     "id": "Phone",
+     "cluster": 2,
+     "nameLong": "Phone / Social Media",
+     "link": ""
+   },
+   {
+     "id": "Wholesale",
+     "cluster": 2,
+     "nameLong": "Wholesale",
+     "link": ""
+   },
+   {
+     "id": "Shipstation",
+     "cluster": 3,
+     "nameLong": "Shipstation",
+     "link": "https://www.tradegecko.com/integrations/shipstation-inventory-management",
+     "img":  "https://11tcma2eyqgmz6zyt1x6na8n-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/ShipStation-stacked-black-150x150.png"
+   },
+   {
+     "id": "FBA",
+     "cluster": 3,
+     "nameLong": "Fulfillment by Amazon",
+     "link": "https://www.tradegecko.com/integrations/amazon-fba-inventory-management",
+     "img":  "https://seeklogo.com/images/A/amazon-fulfillment-by-logo-19DC38776B-seeklogo.com.png"
+   }
+ ]
+}

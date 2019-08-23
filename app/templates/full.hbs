@@ -1,3 +1,5 @@
-{{#each this.model.children as |child|}}
-  <h3>{{child.nameShort}}</h3>
-{{/each}}
+<EcosystemGraph
+  @width=960
+  @height=800
+  @content={{this.filteredNodes}}
+/>
