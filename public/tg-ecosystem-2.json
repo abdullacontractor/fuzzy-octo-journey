@@ -1,0 +1,110 @@
+{
+ "nodes": [
+   {
+     "id": "tg",
+     "img": "https://hoiiodotcom.files.wordpress.com/2014/06/tradegecko-logo-colour-1.png",
+     "size": 60
+   },
+   {
+     "id": "xero",
+     "cluster": 1,
+     "img":  "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Xero_software_logo.svg/1024px-Xero_software_logo.svg.png"
+   },
+   {
+     "id": "qbo",
+     "cluster": 1,
+     "img":  "https://quickbooks.intuit.com/content/dam/intuit/quickbooks/common/qb_thumb.png"
+   },
+   {
+     "id": "shopify",
+     "cluster": 2,
+     "img":  "https://static1.squarespace.com/static/553f4667e4b0abb691b9fd09/58764e2ebf629a8deadfb7c9/58764e5420099e0e12688a2a/1484148342515/channel-icons-color-09.png"
+   },
+   {
+     "id": "amazon",
+     "cluster": 2,
+     "img":  "https://yokoent.com/images/amazon-logo-png-circle.png"
+   },
+   {
+     "id": "magento",
+     "cluster": 2,
+     "img":  "https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/magento-512.png"
+   },
+   {
+     "id": "woo",
+     "cluster": 2,
+     "img":  "https://www.onesaas.com/wp-content/uploads/2017/07/App-logo-WooCommerce.png"
+   },
+   {
+     "id": "physical",
+     "cluster": 2,
+     "img":  ""
+   },
+   {
+     "id": "phone",
+     "cluster": 2,
+     "img":  ""
+   },
+   {
+     "id": "wholesale",
+     "cluster": 2,
+     "img":  ""
+   },
+   {
+     "id": "shipstation",
+     "cluster": 3,
+     "img":  "https://11tcma2eyqgmz6zyt1x6na8n-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/ShipStation-stacked-black-150x150.png"
+   },
+   {
+     "id": "fba",
+     "cluster": 3,
+     "img":  "https://seeklogo.com/images/A/amazon-fulfillment-by-logo-19DC38776B-seeklogo.com.png"
+   }
+ ],
+ "links": [
+   {
+     "source": "tg",
+     "target": "xero"
+   },
+   {
+     "source": "tg",
+     "target": "qbo"
+   },
+   {
+     "source": "tg",
+     "target": "shopify"
+   },
+   {
+     "source": "tg",
+     "target": "amazon"
+   },
+   {
+     "source": "tg",
+     "target": "magento"
+   },
+   {
+     "source": "tg",
+     "target": "woo"
+   },
+   {
+     "source": "tg",
+     "target": "physical"
+   },
+   {
+     "source": "tg",
+     "target": "phone"
+   },
+   {
+     "source": "tg",
+     "target": "wholesale"
+   },
+   {
+     "source": "tg",
+     "target": "shipstation"
+   },
+   {
+     "source": "tg",
+     "target": "fba"
+   }
+ ]
+}

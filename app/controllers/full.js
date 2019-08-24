@@ -7,17 +7,16 @@ export default class FullController extends Controller {
 
   constructor(owner, args) {
     super(...arguments)
-    this.selectedNodes = ['Xero', 'QBO']
+    this.selectedNodes = ['tg', 'xero', 'shopify']
   }
 
   get filteredNodes() {
-    let rootNode = JSON.parse(JSON.stringify(this.model))
-    let children = rootNode.children
-
-    rootNode.children = children.filter((child) => {
-      return this.get('selectedNodes').includes(child.id)
-    })
-
-    return rootNode
+    return {
+      nodes: this.model.nodes.filter((node) => this.get('selectedNodes').includes(node.id)),
+      links: this.model.links.filter((link) => {
+        return (this.get('selectedNodes').includes(link.source) || this.get('selectedNodes').includes(link.source.id))
+          && (this.get('selectedNodes').includes(link.target) || this.get('selectedNodes').includes(link.target.id))
+      })
+    }
   }
 }
