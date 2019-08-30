@@ -10,6 +10,14 @@ export default class FullController extends Controller {
     this.selectedNodes = ['tg', 'xero', 'shopify']
   }
 
+  updateSelected(node) {
+    if (this.selectedNodes.includes(node)) {
+      this.selectedNodes = this.selectedNodes.reject((s) => s === node);
+    } else {
+      this.selectedNodes = [...this.selectedNodes, node];
+    }
+  }
+
   get filteredNodes() {
     return {
       nodes: this.model.nodes.filter((node) => this.get('selectedNodes').includes(node.id)),

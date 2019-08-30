@@ -8,14 +8,16 @@ export default class EcosystemGraph extends Component {
 
   @action
   renderGraph(element) {
-    let width = this.args.width;
-    let height = this.args.height;
+    let width = element.clientWidth;
+    let height = element.clientHeight;
     const nodeSize = 45;
     const nodePadding = 15;
 
     let svg = select(element);
     let nodes = this.args.content.nodes;
     let links = this.args.content.links;
+    nodes[0].fx = width/2
+    nodes[0].fy = height/2
 
     // Lines
     let link = svg.selectAll('path.link')
@@ -25,7 +27,7 @@ export default class EcosystemGraph extends Component {
     // link.enter()
     //   .append('path')
     //   .attr("class", "link")
-    //   .attr("stroke-width", 1)
+    //   .attr("stroke-width", 2)
     //   .style("stroke", "#eee");
 
     // Nodes
@@ -59,7 +61,7 @@ export default class EcosystemGraph extends Component {
       .attr("height", (d) => 2 * (d.size || nodeSize))
       .attr("width", (d) => 2 * (d.size || nodeSize));
 
-    let forceCentering = forceCenter(this.args.width / 2, this.args.height / 2);
+    let forceCentering = forceCenter(width / 2, height / 2);
 
     let forceCharges = forceManyBody()
       .strength(50)
@@ -75,11 +77,11 @@ export default class EcosystemGraph extends Component {
 
     let forceCollision = forceCollide()
       .radius((d) => (d.size || nodeSize) + nodePadding)
-      // .strength(0.7)
+      .strength(1)
 
     this.simulation = forceSimulation()
       .nodes(nodes)
-      .alpha(0.1)
+      .alpha(0.3)
       .force("link", forceLinks)
       .force("charge", forceCharges)
       .force("center", forceCentering)

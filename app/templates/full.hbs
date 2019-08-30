@@ -1,5 +1,21 @@
-<EcosystemGraph
-  @width=960
-  @height=800
-  @content={{this.filteredNodes}}
-/>
+<div class="full__container">
+  <div class="full__checklist">
+    {{#each this.model.nodes as |node|}}
+      <div>
+        <input
+          type="checkbox"
+          id={{node.id}}
+          name={{node.id}}
+          checked={{array-includes this.selectedNodes node.id}}
+          onchange={{action this.updateSelected node.id}}
+        >
+        <label for="scales">{{node.id}}</label>
+      </div>
+    {{/each}}
+  </div>
+  <div class="full__graph">
+    <EcosystemGraph
+      @content={{this.filteredNodes}}
+    />
+  </div>
+</div>
